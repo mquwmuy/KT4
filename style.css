@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  background-color: #6dadbf;
+  background-image: url("image.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.top-line {
+  height: 48px;
+  background: #ffffff;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+}
+
+.logo {
+  color: rgb(165, 165, 165);
+  font-size: 35px;
+  margin-left: 450px;
+  display: flex;
+}
+
+
+/* центр*/
+.wrap {
+  max-width: 550px;
+  margin: 0 auto;
+  flex-wrap: 1;
+  
+}
+
+/* сетка карточек */
+.cards {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* две колонки */
+  gap: 24px; /* расстояние между карточками */
+  margin-bottom: 70px;
+  justify-content:center;
+  
+}
+
+/* карточка */
+.card {
+  background: #fff;
+  border: 2px solid #5fb1bd;
+  border-radius: 12px 0px;
+  padding: 26px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.04);
+  min-height: 200px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.card .num {
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  color: #5fb1bd;
+  line-height: 1;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.card .text p {
+  margin: 0;
+  font-style: italic;
+  color: #8b8b8b;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+}
+@media (max-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card .num {
+    font-size: 36px;
+  }
+}
+.bottom-line {
+  
+  height: 150px;
+  background: #2d2d2d;
+}
+.text1 {
+  padding-top: 30px;
+  color: #fff;
+  font-style: normal;
+  text-align: center;
+  font-family: "Calibri Light";
+}
